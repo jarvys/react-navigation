@@ -272,6 +272,7 @@ export type NavigationContainerConfig = {
 
 export type NavigationStackViewConfig = {
   mode?: 'card' | 'modal',
+  transitionConfig?: () => Object,
   headerMode?: HeaderMode,
   headerComponent?: ReactClass<HeaderProps<*>>,
   cardStyle?: Style,
